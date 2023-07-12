@@ -38,7 +38,9 @@
   },
   "lint-staged": {
     "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": [
-      "yarn lint:fix",
+      "yarn lint:fix"
+    ],
+    "*.{vue,ts,tsx,cts,mts}": [
       "vue-tsc-files --noEmit"
     ]
   }
