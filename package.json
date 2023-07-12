@@ -8,7 +8,8 @@
     "preview": "nuxt preview",
     "prepare": "husky install",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore .",
+    "lint": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore .",
+    "lint:fix": "yarn lint -- --fix",
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
@@ -36,7 +37,7 @@
   },
   "lint-staged": {
     "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": [
-      "npm run lint",
+      "yarn lint:fix",
       "vue-tsc-files --noEmit"
     ]
   }
