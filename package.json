@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore .",
-    "lint:fix": "yarn lint -- --fix",
+    "lint:fix": "yarn lint --fix",
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
