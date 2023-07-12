@@ -6,4 +6,10 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     '@vue/eslint-config-airbnb-with-typescript',
   ],
+  rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['nuxt.config.ts', '.eslintrc.cjs'] },
+    ],
+  },
 };
