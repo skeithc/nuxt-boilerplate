@@ -2,14 +2,12 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   root: true,
-  extends: [
-    'plugin:vue/vue3-recommended',
-    '@vue/eslint-config-airbnb-with-typescript',
-  ],
+  plugins: ['prettier'],
+  extends: ['plugin:vue/vue3-recommended', '@vue/eslint-config-airbnb-with-typescript', 'prettier'],
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['nuxt.config.ts', '.eslintrc.cjs'] },
+      {devDependencies: ['nuxt.config.ts', '.eslintrc.cjs']},
     ],
   },
 };
