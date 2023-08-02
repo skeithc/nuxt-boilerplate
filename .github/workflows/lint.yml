@@ -2,10 +2,10 @@ name: Run linters
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
   pull_request:
-    branches: [ '*' ]
+    branches: ['*']
 
 jobs:
   lint:
@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 20.x ]
+        node-version: [20.x]
 
     steps:
       - name: Checkout repository
