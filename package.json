@@ -29,6 +29,7 @@
     "lint-staged": "^13.2.3",
     "nuxt": "^3.6.5",
     "postcss": "^8.4.27",
+    "postcss-custom-properties": "^13.3.0",
     "prettier": "^3.0.0",
     "prettier-airbnb-config": "^1.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
